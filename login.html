@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | Taiwan Mobile game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="login">
+    <header>
+        <nav class="container">
+            <h1>LOGO</h1>
+            <div>
+                <a href="home.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="devices.html">Devices</a>
+                <a href="login.html" class='active'>Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="login-box">
+            <div class="photo">
+                <img src="img/photo.png" alt="">
+            </div>
+            <form action="login.php" class="form">
+                <label>
+                    <div>Account</div>
+                    <input type="text" name="acc" id="acc">
+                </label>
+                <label>
+                    <div>Password</div>
+                    <input type="password" name="pw" id="pw">
+                </label>
+                <label>
+                    <div>Verification <span class='ver-box'>123131</span></div> 
+                    <input type="text" name="ver" id="ver">
+                </label>
+                <p class="ct">
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer>Copyright 2021 Taiwan Mobile game All Rights Reserved</footer>
+</body>
+
+</html>

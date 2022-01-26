@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES | Taiwan Mobile game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="games">
+    <header>
+        <nav class="container">
+            <h1>LOGO</h1>
+            <div>
+                <a href="home.html">Home</a>
+                <a href="games.html" class='active'>Games</a>
+                <a href="devices.html">Devices</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class='container'>
+        <div class="map">
+            <a class='star' href='#info1' style="top:120px;left:480px">&#9733;</a>
+            <a class='star' href='#info2' style="top:110px;left:250px">&#9733;</a>
+            <a class='star' href='#info3' style="top:310px;left:160px">&#9733;</a>
+            <a class='star' href='#info4' style="top:340px;left:250px">&#9733;</a>
+            <a class='star' href='#info5' style="top:420px;left:290px">&#9733;</a>
+            <img src="img/worldmap.jpg" alt="">
+        </div>
+        <div class="msg">
+            <div class="item" id="info1">
+                <img src="img/game1.png" alt="">
+                <div class="info">game1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit magnam pariatur nam voluptate officiis sit, veniam cumque rem sapiente odit voluptatum doloribus tenetur quo numquam. Animi, obcaecati. Consequuntur, velit?</div>
+            </div>
+            <div class="item" id="info2">
+                <img src="img/game2.png" alt="">
+                <div class="info">game2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit magnam pariatur nam voluptate officiis sit, veniam cumque rem sapiente odit voluptatum doloribus tenetur quo numquam. Animi, obcaecati. Consequuntur, velit?</div>
+            </div>
+            <div class="item" id="info3">
+                <img src="img/game3.png" alt="">
+                <div class="info">game3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit magnam pariatur nam voluptate officiis sit, veniam cumque rem sapiente odit voluptatum doloribus tenetur quo numquam. Animi, obcaecati. Consequuntur, velit?</div>
+            </div>
+            <div class="item" id="info4">
+                <img src="img/game4.png" alt="">
+                <div class="info">game4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit magnam pariatur nam voluptate officiis sit, veniam cumque rem sapiente odit voluptatum doloribus tenetur quo numquam. Animi, obcaecati. Consequuntur, velit?</div>
+            </div>
+            <div class="item" id="info5">
+                <img src="img/game5.png" alt="">
+                <div class="info">game5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit magnam pariatur nam voluptate officiis sit, veniam cumque rem sapiente odit voluptatum doloribus tenetur quo numquam. Animi, obcaecati. Consequuntur, velit?</div>
+            </div>
+
+        </div>
+    </main>
+    <footer>Copyright 2021 Taiwan Mobile game All Rights Reserved</footer>
+
+</body>
+
+</html>
+<script>
+$(".item").eq(0).show();
+$(".star").on("click",function(){
+    let id=$(this).attr("href");
+    $(".item").hide();
+    $(id).show();
+})
+</script>
