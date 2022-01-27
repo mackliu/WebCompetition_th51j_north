@@ -5,15 +5,31 @@
     box-sizing:border-box;
     font-family: Arial;
 }
-header{
-    padding:1em;
-    background-color:lightskyblue;
-    box-shadow: 0 0 5px #999;
-}
 .container{
     width:75%;
     display:flex;
     margin:auto;
+}
+main{
+    align-items:center;
+    height:calc(100vh - 130px);
+}
+footer{
+    background:lightskyblue;
+    color:darkblue;
+    padding:1em;
+    width:100%;
+    line-height:1em;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+}
+
+/*頁首導覽列*/
+header{
+    padding:1em;
+    background-color:lightskyblue;
+    box-shadow: 0 0 5px #999;
 }
 nav.container{
     justify-content: space-between;
@@ -32,10 +48,8 @@ nav a:hover,
     border-radius:15px;
     box-shadow: 0px 2px 5px #999;
 }
-main{
- align-items:center;
- height:calc(100vh - 130px);
-}
+
+/*首頁設定*/
 #home main{
     justify-content: space-between;
 }
@@ -49,6 +63,8 @@ main{
     width:100%;
     border-radius:1.5em;
 }
+
+/*遊戲頁設定*/
 #games main{
     justify-content: center;
 }
@@ -96,6 +112,8 @@ main{
     padding:1em;
     line-height:1.4em;
 }
+
+/*裝置頁設定*/
 #devices main{
     flex-flow: column;
     justify-content: center;
@@ -150,6 +168,8 @@ main{
     font-size:1.5em;
     bottom:0;
 }
+
+/*登入頁設定*/
 #login main{
     justify-content: center;
 }
@@ -198,14 +218,4 @@ main{
     width:90%;
     margin:auto;
     border-radius:0.5em;
-}
-footer{
-    background:lightskyblue;
-    color:darkblue;
-    padding:1em;
-    width:100%;
-    line-height:1em;
-    text-align:center;
-    position:fixed;
-    bottom:0;
 }
